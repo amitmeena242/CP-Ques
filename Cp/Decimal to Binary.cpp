@@ -18,9 +18,24 @@ Sample Output 2 :
 111
 */
 
-#include<iostream>
+#include<bits/stdc++.h>
+
+#define MOD 1000000007
+#define MAX 100001
+#define ll long long
+#define slld(t) scanf("%lld",&t)
+//#define sd(t) scanf("%d",&t)
+#define pd(t) printf("%d\n",t)
+#define plld(t) printf("%lld\n",t)
+#define pcc pair<char,char>
+#define pii pair<int,int>
+#define pll pair<ll,ll>
+#define tr(container,it) for(typeof(container.begin()) it=container.begin();it!=container.end();it++)
+#define mp(a,b) make_pair(a,b)
+#define F first
+#define S second
+
 using namespace std;
-#include<cmath>
 
 int main() {
 	// Write your code here
@@ -28,7 +43,7 @@ int main() {
     cin>>n;
     long int num = 0;
     int c=0;
-    while(n!=0){
+    while(n){
         long int rem = n%2;
         long int position_value = pow(10, c);
         num += position_value *rem;
