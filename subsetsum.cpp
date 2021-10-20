@@ -34,7 +34,15 @@ int main(){
     ios_base::sync_with_stdio(0);
     cin.tie(0);  
     //
-    vector<int> arr = {3, 1, 8, 7};
+    int n;
+    cin>>n;
+    vector<int> arr;
+    for(int i=0;i<n;i++)
+    {
+        int val;
+        cin>>val;
+        arr.push_back(val);
+    }
     int k = 6;
     subModM(arr, k) ? cout<<"subset found\n" : cout<<"no subset found\n";
     return 0;
