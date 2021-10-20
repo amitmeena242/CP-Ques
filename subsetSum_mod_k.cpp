@@ -20,7 +20,7 @@ bool subModM(vector<int>& arr, int k){
 
         rem = (rem<0) ? k + rem : rem;
 
-        if(ma.find(rem) != ma.end())
+        if(ma[rem])
             //count += ma[rem];         //count no. of subsets
             return true;                // return when first subset is found
         else
