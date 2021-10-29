@@ -36,7 +36,10 @@ Sample Output 2 :
 #define S second
 
 using namespace std;
-
+void print(int num)
+{
+	cout<<num<<endl;
+}
 int main() {
 	// Write your code here
     int n;
@@ -51,5 +54,5 @@ int main() {
         c++;
         
     }
-    cout<<num;	
+    print(num);
 }
