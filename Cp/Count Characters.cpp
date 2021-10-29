@@ -18,29 +18,34 @@ Number of white spaces : 2 (one space after abc and one newline after 4)
 
 #include<iostream>
 using namespace std;
-
+void print(int characters, int digits, int spaces)
+{
+	cout<<characters<<" "<<digits<<" "<<spaces;
+	return;
+}	
 int main(){
-
-    /* Read input as specified in the question.
-	 * Print output as specified in the question.
-	 */
     char c;
     c = cin.get();
     int characters = 0;
     int digits = 0;
     int spaces = 0;
-    while(c!='$'){
+    while(c!='$')
+    {
         int d = c;
-        if (d>=97 && d<=122){
+        if (d>=97 && d<=122)
+	{
             characters++;
         }
-        else if(d>=48 && d<=57){
+        else if(d>=48 && d<=57)
+	{
             digits++;
         }
-        else if(c==' ' || c=='\t' || c=='\n'){
+        else if(c==' ' || c=='\t' || c=='\n')
+	{
             spaces++;
         }
         c = cin.get();
     }
-    cout<<characters<<" "<<digits<<" "<<spaces;
+    print();
+    
 }
