@@ -11,6 +11,9 @@ using pi = pair<int,int>;
 #define s second
 #define mp make_pair
 const int MAX=1e5+10;
+#define pii pair<int,int> 
+#define mi map<int,int> 
+
 
 //functions
 void setIO(string name = ""){cin.tie(0)->sync_with_stdio(0);if(sz(name)){freopen((name+".in").c_str(),"r",stdin);freopen((name+".out").c_str(),"w",stdout);}}
@@ -18,6 +21,6 @@ void setIO(string name = ""){cin.tie(0)->sync_with_stdio(0);if(sz(name)){freopen
 //Driver Code//
 int main() {
    	setIO();
-   //for precised float numbers     cout << fixed<<setprecision(6);
+      cout << fixed<<setprecision(6);
    
 }
