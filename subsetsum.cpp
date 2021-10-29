@@ -44,6 +44,8 @@ int main(){
         arr.push_back(val);
     }
     int k = 6;
-    subModM(arr, k) ? cout<<"subset found\n" : cout<<"no subset found\n";
+    bool ans=subModM(arr, k);
+    if(ans)cout<<"subset found\n";
+    else cout<<"no subset found\n";
     return 0;
 }
