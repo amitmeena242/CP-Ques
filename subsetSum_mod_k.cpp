@@ -18,7 +18,12 @@ bool subModM(vector<int>& arr, int k){
         csum += x;
         rem = csum % k;
 
-        rem = (rem<0) ? k + rem : rem;
+        //rem = (rem<0) ? k + rem : rem;
+        if(rem<0)
+        {
+            rem=k+rem;
+        }
+        else rem=rem;
 
         if(ma[rem])
             //count += ma[rem];         //count no. of subsets
