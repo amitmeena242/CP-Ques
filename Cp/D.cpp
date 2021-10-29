@@ -17,7 +17,8 @@
     { setIO();
       int t;cin>>t;while(t--)
       { 
-    	 int s;cin>>s;
+    	 int s;
+         cin>>s;
     	 int cnt=1;
     	 int ss=1,v=1;
     	 while(ss<s)
@@ -26,6 +27,6 @@
     		 cnt++;
     		 ss+=v;
     	 }
-         cout<<cnt<<"\n";
+         cout<<cnt<<endl;
       }
     }
