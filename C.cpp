@@ -1,6 +1,5 @@
 #include <bits/stdc++.h> 
     using namespace std;
-     
     using ll = long long;
     using vi = vector<int>;
     #define pb push_back
@@ -17,8 +16,7 @@
     		freopen((name+".out").c_str(), "w", stdout);
     	}
     }
-    ///|||///||| Driver Code  ///|||///|||
-     
+    ///|||///||| Driver Code  ///|||///||| 
     int gcd(ll a,ll b)
     {
     	if(b==0)return a;
@@ -27,8 +25,11 @@
      
      
     int main()
-    { setIO();
-      int t;cin>>t;while(t--)
+    { 
+      setIO();
+      int t; 
+      cin>>t;
+      while(t--)
       { 
     	 int s;cin>>s;
     	 int cnt=1;
