@@ -29,7 +29,10 @@ Sample Output 2:
 
 #include <iostream>
 using namespace std;
-
+void print(int n)
+{
+	cout<<n<<endl;
+}
 int main(){
 
     /* Read input as specified in the question.
@@ -37,18 +40,16 @@ int main(){
 	 */
     int n;
     cin>>n;
-    
     for(int i=2; i<=n; i++){
         bool divided = false;
-        
         for (int j=2; j<i; j++){
-            if (i%j == 0){
+            if (!(i%j)){
                 divided = true;
                 break;
             }
         }
         if (!divided){
-            cout<<i<<endl;
+            print(i);
         }
     }
 }
