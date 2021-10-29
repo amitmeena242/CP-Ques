@@ -20,7 +20,8 @@
     int gcd(ll a,ll b)
     {
     	if(b==0)return a;
-    	else return gcd(b,a%b);
+        int ans=gcd(b,a%b);
+    	return ans;
     }
      
      
